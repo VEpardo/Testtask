@@ -1,7 +1,3 @@
-//NOTE:The URLs may no longer be valid by the time you view this course.
-//If you get errors due to some of thesepages being unavailable,
-//feel free to substitute them with other valid URLs.
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -38,7 +34,7 @@ public class PageDownloader implements Runnable {
 		        while ((line = reader.readLine()) != null) {
 		            writer.write(line);
 		         }            
-		        System.out.println("Page downloaded to " + filename);
+		        System.out.println("Downloaded " + filename);
 		        
 		        writer.close();
 		        // Thread.sleep(1000);		        
@@ -54,7 +50,7 @@ public class PageDownloader implements Runnable {
 	public static void main(String args[]) 
     { 
 		
-		String[] urls = new String[]{"https://iweb.dl.sourceforge.net/project/reactos/ReactOS/0.4.14/ReactOS-0.4.14-iso.zip",
+		String[] urls = new String[]{"https://phoenixnap.dl.sourceforge.net/project/reactos/ReactOS/0.4.14/ReactOS-0.4.14-iso.zip",
 				"https://downloads-global.3cx.com/downloads/debian10iso/debian-amd64-netinst-3cx.iso"};
 
 
